@@ -70,8 +70,11 @@
                 </div>
             </div>
         </nav>
-
-        @yield('content')
+        <div class="container">
+            @include('partials.message')
+            @yield('content')    
+        </div>
+        
     </div>
 
     <!-- Scripts -->

@@ -20,4 +20,8 @@ class Company extends Model
     public function comments() {
         return $this->morphMany(Comment::class, 'commentable');
     }
+
+    public function projects() {
+        return $this->hasMany(Project::class);
+    }
 }
